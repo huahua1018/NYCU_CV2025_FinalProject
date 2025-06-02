@@ -70,6 +70,12 @@ Run the following command to split the images into patches and start training:
 python patch_train.py
 ```
 
+If you want to train on full image instead of patches, you can run following script:
+
+```
+python fullres_train.py
+```
+
 ### Test
 
 ### Visualization
