@@ -77,6 +77,8 @@ python fullres_train.py
 ```
 
 ### Test
+Since the Kaggle competition requires submissions in the form of a notebook,
+you can run **cellpose-sam [inference version].ipynb** directly for testing and generating submission.csv.
 
 ### Visualization
 We provide a Python script that displays the original image, ground truth, and predictions from two different models side by side for easy comparison：
