@@ -3,7 +3,7 @@ Team member: 313551093 盧品樺, 313551052 王嘉羽, 313551127 王翔, 3135530
 
 ## Introduction
 
-For our final project, we participated in the [Sartorius - Cell Instance Segmentation Kaggle competition](https://www.kaggle.com/competitions/sartorius-cell-instance-segmentation/overview), which focuses on segmenting SH-SY5Y microscope images. The evaluation metric used in the competition is mean Average Precision (mAP). In our project, we primarily used **Cellpose-SAM**, the latest version of Cellpose, and integrated techniques such as **ensemble learning, Test-Time Augmentation (TTA)**, and **Weighted Mask Fusion (WMF)** to improve the final mAP score.
+For our final project, we participated in the [Sartorius - Cell Instance Segmentation Kaggle competition](https://www.kaggle.com/competitions/sartorius-cell-instance-segmentation/overview), which focuses on segmenting neuronal cells in microscopy images. The evaluation metric used in the competition is mean Average Precision (mAP). In our project, we primarily used **Cellpose-SAM**, the latest version of Cellpose, and integrated techniques such as **ensemble learning, Test-Time Augmentation (TTA)**, and **Weighted Mask Fusion (WMF)** to improve the final mAP score.
 
 ## Setup and Preparation Process
 ### Step 1 : Environment Setup
@@ -53,7 +53,21 @@ python prepare_livecell_dataset.py --data_dir <Path to the processed LIVECell da
 python train_livecell.py --train_dir <Path to training data> --test_dir<Path to validation data> --checkpoints_dir <Path to the pre-trained model checkpoints> --model_name <Name of the model to save> --save_path <Path to save the model checkpoints> 
 ```
 
+#### Prepare training dataset
+Since CellposeSAM requires masks to be saved in the {filename}_seg.npy format,
+and the official training data does not include a validation split,
+we need to run the following script to generate the required files:
+
+```
+python preprocess.py --img_dir <Path to training data> --label_csv<Path to train.csv> --train_dir <Path tosave training set> --val_dir <Path to save validation set>
+```
+
 ### Train
+
+
+```
+python patch_train.py
+```
 
 
 ### Test
