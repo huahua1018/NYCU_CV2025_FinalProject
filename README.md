@@ -72,5 +72,15 @@ python patch_train.py
 
 ### Test
 
+### Visualization
+We provide a Python script that displays the original image, ground truth, and predictions from two different models side by side for easy comparison：
+
+```
+python visualization_compare.py --model_path1 <Path to the first model checkpoint> --model_path1 <Path to the second model checkpoint> --test_dir <Path to validation set> 
+```
+
+You will get an output like the image below:
+![mask_overlay_pretrained_livecell_barry](https://github.com/user-attachments/assets/8b126c64-1fe0-404f-b396-936b9842bfd0)
+
 
 ## Performance snapshot
