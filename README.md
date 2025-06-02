@@ -5,6 +5,10 @@ Team member: 313551093 盧品樺, 313551052 王嘉羽, 313551127 王翔, 3135530
 
 ## Setup and Preparation Process
 ### Step 1 : Environment Setup
+Our project leverages **cellposeSAM**. 
+For installation guidance, please refer to the official instructions provided in the [cellpose](https://github.com/MouseLand/cellpose) repository.
+
+
 ### Step 2 : Dataset Preparation
 
 ## Usage
