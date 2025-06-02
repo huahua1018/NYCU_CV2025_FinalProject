@@ -94,3 +94,6 @@ You will get an output like the image below:
 ## Performance snapshot
 ![image](https://github.com/user-attachments/assets/57063859-e628-43fe-956c-c97fb5fbe0fe)
 
+
+## Team member contribution
+![Screenshot from 2025-06-02 22-30-30](https://github.com/user-attachments/assets/5353c02b-6e49-4e0b-a982-1a3a7531beff)
