@@ -64,12 +64,13 @@ python preprocess.py --img_dir <Path to training data> --label_csv<Path to train
 
 ### Train
 
+Run the following command to split the images into patches and start training:
 
 ```
 python patch_train.py
 ```
 
-
 ### Test
+
 
 ## Performance snapshot
